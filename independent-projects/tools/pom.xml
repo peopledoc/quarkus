@@ -216,14 +216,16 @@
     </dependencyManagement>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-release</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>project-releases</id>
+            <name>Artifactory java-tribe Releases</name>
+            <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-release</url>
         </repository>
+        <snapshotRepository>
+            <id>project-snapshots</id>
+            <name>Artifactory java-tribe Snapshots</name>
+            <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>

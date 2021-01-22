@@ -12,7 +12,7 @@
     <groupId>io.quarkus</groupId>
     <artifactId>quarkus-parent</artifactId>
     <name>Quarkus - Parent pom</name>
-    <version>999-SNAPSHOT</version>
+    <version>1.11.0.Final.UKG.1</version>
     <packaging>pom</packaging>
 
     <licenses>
@@ -93,14 +93,16 @@
     </repositories>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-release</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>project-releases</id>
+            <name>Artifactory java-tribe Releases</name>
+            <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-release</url>
         </repository>
+        <snapshotRepository>
+            <id>project-snapshots</id>
+            <name>Artifactory java-tribe Snapshots</name>
+            <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <profiles>
