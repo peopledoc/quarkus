@@ -103,6 +103,14 @@
             <name>Artifactory java-tribe Snapshots</name>
             <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-snapshot</url>
         </snapshotRepository>
+        <!--repository>
+          <id>nova</id>
+          <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-plugins-release/</url>
+        </repository>
+        <snapshotRepository>
+          <id>snapshots</id>
+          <url> https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-plugins-snapshot/</url>
+        </snapshotRepository-->        
     </distributionManagement>
 
     <profiles>
