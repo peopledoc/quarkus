@@ -13,7 +13,7 @@
     <artifactId>arc-parent</artifactId>
     <name>ArC - Parent pom</name>
     <packaging>pom</packaging>
-    <version>999-SNAPSHOT</version>
+    <version>1.13.3.Final.UKG.1</version>
 
     <licenses>
         <license>
@@ -292,14 +292,16 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-releases</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
+          <id>project-releases</id>
+          <name>Artifactory java-tribe Releases</name>
+          <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-release</url>
+      </repository>
+      <snapshotRepository>
+          <id>project-snapshots</id>
+          <name>Artifactory java-tribe Snapshots</name>
+          <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-snapshot</url>
+      </snapshotRepository>
     </distributionManagement>
 
     <profiles>

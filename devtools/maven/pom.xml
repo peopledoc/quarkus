@@ -5,7 +5,7 @@
     <parent>
         <artifactId>quarkus-build-parent</artifactId>
         <groupId>io.quarkus</groupId>
-        <version>999-SNAPSHOT</version>
+        <version>1.13.3.Final.UKG.1</version>
         <relativePath>../../build-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -17,6 +17,18 @@
     <properties>
         <quarkus.version>${project.version}</quarkus.version>
     </properties>
+    <distributionManagement>
+        <snapshotRepository>
+          <id>project-releases</id>
+          <name>Artifactory java-tribe Releases</name>
+          <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-release</url>
+      </repository>
+      <snapshotRepository>
+          <id>project-snapshots</id>
+          <name>Artifactory java-tribe Snapshots</name>
+          <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-snapshot</url>
+      </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
