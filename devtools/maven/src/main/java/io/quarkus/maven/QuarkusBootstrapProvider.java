@@ -62,7 +62,7 @@ public class QuarkusBootstrapProvider implements Closeable {
 
     public AppArtifact projectArtifact(QuarkusBootstrapMojo mojo)
             throws MojoExecutionException {
-        return provider(mojo.projectId(), mojo.executionId()).appArtifact(mojo);
+        return provider(mojo.projectId(), mojo.executionId()).projectArtifact(mojo);
     }
 
     public QuarkusBootstrap bootstrapQuarkus(QuarkusBootstrapMojo mojo)

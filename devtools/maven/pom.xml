@@ -18,7 +18,7 @@
         <quarkus.version>${project.version}</quarkus.version>
     </properties>
     <distributionManagement>
-        <snapshotRepository>
+        <repository>
           <id>project-releases</id>
           <name>Artifactory java-tribe Releases</name>
           <url>https://artifactory.mia.ulti.io/artifactory/java-tribe-maven-libs-release</url>
